@@ -39,6 +39,7 @@ function WordCounter() {
       />
       <Alert alert={alert} />
       <TextBox action="To Uppercase" mode={mode} showAlert={showAlert} />
+      <p>© 2023 Ravi Charan</p>
     </>
   );
 }

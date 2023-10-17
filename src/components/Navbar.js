@@ -46,7 +46,7 @@ export default function Navbar(props) {
           id="customSwitches"
           onClick={props.toggleMode}
         />
-        <label className="custom-control-label" htmlFor="customSwitches">
+        <label className="custom-control-label mx-2" htmlFor="customSwitches">
           Enable {props.mode === "light" ? "dark" : "light"} Mode
         </label>
       </div>

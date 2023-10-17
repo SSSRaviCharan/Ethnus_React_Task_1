@@ -34,7 +34,7 @@ export default function TextBox(props) {
           className="form-group"
           style={{ color: props.mode === "dark" ? "white" : "black" }}
         >
-          <h1>Enter Text</h1>
+          <h1>Responsive Paragraph Word Counter</h1> <br></br>
           <textarea
             className="form-control"
             value={text}
@@ -45,7 +45,8 @@ export default function TextBox(props) {
               backgroundColor: props.mode === "dark" ? "black" : "white",
               color: props.mode === "dark" ? "white" : "black",
             }}
-          ></textarea>
+          ></textarea>{" "}
+          <br></br>
         </div>
         <div className="btn btn-primary" onClick={upperCase}>
           To Uppercase
@@ -66,7 +67,8 @@ export default function TextBox(props) {
       >
         <h2 className="my-4">Your Text Summary:</h2>
         <p>
-          Number of Words: {text.trim().split(" ").length} <br />
+          Number of Words:{" "}
+          {text.trim() === "" ? 0 : text.trim().split(/\s+/).length} <br />
           Number of Characters: {text.length}
         </p>
       </div>
