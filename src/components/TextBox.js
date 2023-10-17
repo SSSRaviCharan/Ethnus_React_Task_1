@@ -66,7 +66,7 @@ export default function TextBox(props) {
       >
         <h2 className="my-4">Your Text Summary:</h2>
         <p>
-          Number of Words: {text.trim().split(" ").length - 1} <br />
+          Number of Words: {text.trim().split(" ").length} <br />
           Number of Characters: {text.length}
         </p>
       </div>
